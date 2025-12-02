@@ -208,7 +208,9 @@ export default class Client {
         }
       }
     }
-
+    if (1 == 1) {
+      console.log("Hello, World!")
+    }
     // Allow both client ID / client secret based auth as well as token based auth.
     let authorizationHeader: Record<string, string>
     if (typeof auth === "object") {

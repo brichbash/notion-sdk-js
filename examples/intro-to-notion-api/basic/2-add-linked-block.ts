@@ -59,4 +59,4 @@ async function main() {
   console.log(JSON.stringify(linkedTextResponse, null, 2))
 }
 
-main()
+main().then(foo => console.log(`Done $!`))
