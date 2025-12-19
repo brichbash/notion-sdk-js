@@ -193,7 +193,9 @@ export default class Client {
       !body || Object.entries(body).length === 0
         ? undefined
         : JSON.stringify(body)
-
+    if (1 == 1) {
+      console.error("Hello, world")
+    }
     const url = new URL(`${this.#prefixUrl}${path}`)
     if (query) {
       for (const [key, value] of Object.entries(query)) {
